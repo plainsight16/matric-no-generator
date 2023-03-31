@@ -20,25 +20,25 @@ namespace myProject
             int deptCode = Convert.ToInt32(Console.ReadLine());
 
 
-            string matricNumber = new MatricNoGenerator(facultyCode, deptCode).generateMatricNo();
+            string matricNumber = MatricNoGenerator.generateMatricNo(facultyCode, deptCode);
         
             Console.WriteLine(matricNumber);  
             
         }
-        static void printFaculties(List<Faculty> dialog)
+        static void printFaculties(List<Faculty> faculties)
         {
             Console.WriteLine("Faculty Name\t\t\tFaculty Code");
-            foreach(Faculty element in dialog)
+            foreach(Faculty faculty in faculties)
             {
-                Console.WriteLine($"{element.getName()}\t\t\t\t{element.getCode()}");
+                Console.WriteLine($"{faculty.getName()}\t\t\t\t{faculty.getCode()}");
             }
         }
-        static void printDepartments(List<Department> dialog)
+        static void printDepartments(List<Department> departments)
         {
             Console.WriteLine("Dept. Name\t\t\t\t\tDept. Code");
-            foreach(Department element in dialog)
+            foreach(Department department in departments)
             {
-                Console.WriteLine($"{element.getName()}\t\t\t\t{element.getCode()}");
+                Console.WriteLine($"{department.getName()}\t\t\t\t{department.getCode()}");
             }
         }
     }
@@ -46,9 +46,9 @@ namespace myProject
 
     class MatricNoGenerator
     {
-        static int counter = 0;
-        int year = 23;
-        int facultyCode, departmentCode;
+        private static int counter = 0;
+
+        private static int year = DateTime.Now.Year % 100;
 
         public static List<Faculty> getAllFaculties()
         {
@@ -62,31 +62,20 @@ namespace myProject
             return newFaculties;
         }
 
-        public static Faculty [] faculties = {
+        public static readonly Faculty [] faculties = {
             new Faculty("Science       ", 1),
             new Faculty("Engineering   ", 2),
             new Faculty("Social Science", 3),
             new Faculty("Arts          ", 4)
         };
 
-        static Department [] departments = {
+        public static readonly Department [] departments = {
             new Department("Computer Science", 1, 1),
             new Department("fishery         ", 5, 1),
             new Department("metallurgy      ", 4, 2),
             new Department("physiology      ", 3, 3)
         };
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="facultyCode"></param>
-        /// <param name="departmentCode"></param>
-
-        public MatricNoGenerator(int facultyCode, int departmentCode)
-        {
-          this.facultyCode = facultyCode;
-          this.departmentCode = departmentCode;
-        }
 
         public static List<Department> filterDepartments(int facultyCode){
             List<Department> newDepartments = new List<Department>();
@@ -96,10 +85,10 @@ namespace myProject
             return newDepartments;
         }
 
-        public string generateMatricNo()
+        public static string generateMatricNo(int facultyCode, int deptCode)
         {
             counter++;
-            return $"{year}--{facultyCode}--{departmentCode}--{counter}";
+            return $"{year}0{facultyCode}0{deptCode}0{counter}";
         }
         
     }

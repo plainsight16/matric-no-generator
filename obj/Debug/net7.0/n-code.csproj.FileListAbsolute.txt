@@ -1,0 +1,15 @@
+C:\Users\User\documents\sr\c#\n-code\bin\Debug\net7.0\n-code.exe
+C:\Users\User\documents\sr\c#\n-code\bin\Debug\net7.0\n-code.deps.json
+C:\Users\User\documents\sr\c#\n-code\bin\Debug\net7.0\n-code.runtimeconfig.json
+C:\Users\User\documents\sr\c#\n-code\bin\Debug\net7.0\n-code.dll
+C:\Users\User\documents\sr\c#\n-code\bin\Debug\net7.0\n-code.pdb
+C:\Users\User\documents\sr\c#\n-code\obj\Debug\net7.0\n-code.csproj.AssemblyReference.cache
+C:\Users\User\documents\sr\c#\n-code\obj\Debug\net7.0\n-code.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\documents\sr\c#\n-code\obj\Debug\net7.0\n-code.AssemblyInfoInputs.cache
+C:\Users\User\documents\sr\c#\n-code\obj\Debug\net7.0\n-code.AssemblyInfo.cs
+C:\Users\User\documents\sr\c#\n-code\obj\Debug\net7.0\n-code.csproj.CoreCompileInputs.cache
+C:\Users\User\documents\sr\c#\n-code\obj\Debug\net7.0\n-code.dll
+C:\Users\User\documents\sr\c#\n-code\obj\Debug\net7.0\refint\n-code.dll
+C:\Users\User\documents\sr\c#\n-code\obj\Debug\net7.0\n-code.pdb
+C:\Users\User\documents\sr\c#\n-code\obj\Debug\net7.0\n-code.genruntimeconfig.cache
+C:\Users\User\documents\sr\c#\n-code\obj\Debug\net7.0\ref\n-code.dll

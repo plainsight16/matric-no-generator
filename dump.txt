@@ -1,0 +1,21 @@
+ enum Faculties
+        {
+            Science = new Faculty("sci", 01),
+            Engineering = new Faculty("eng", 02),
+            SocialScience = new Faculty("ss", 03),
+            Arts = new Faculty("arts", 05),
+            Law = new Faculty("law", 07),
+            BusinessAdministration = new Faculty("ba", 04),
+        }
+
+
+
+      Faculty [] faculties = {new Faculty("Science", 01),
+        new Faculty("Engineering", 02), new Faculty("Social Science", 03), new Faculty("Arts", 04)};
+        Department [] Department = {
+        new Department("Computer Science", 01, 01),
+        new Department("fishery", 05, 01),
+        new Department("metallurgy", 04, 02),
+        new Department("physiology", 03, 01)
+
+      };
